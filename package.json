@@ -1,0 +1,26 @@
+{
+  "name": "tapapat",
+  "version": "1.0.0",
+  "description": "Tapapat build - clone of Patatap",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElvinSamuel/tapapat.git"
+  },
+  "keywords": [
+    "Tapapat",
+    "Patatap"
+  ],
+  "author": "Elvin M. Samuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElvinSamuel/tapapat/issues"
+  },
+  "homepage": "https://github.com/ElvinSamuel/tapapat#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
