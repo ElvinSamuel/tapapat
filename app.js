@@ -2,11 +2,10 @@ var express = require("express"),
     app = express();
 
 /*Have Express Look In The Public Folder For Views*/
-app.use(express.static("views"));
+app.use(express.static(__dirname + "/views"));
 
 app.set("view engine", "ejs");
 
-    
 app.get("/", function(req, res){
     res.render("index");
 });
