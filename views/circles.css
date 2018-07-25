@@ -1,26 +1,53 @@
-canvas {
-    width: 80%;
-    background: rgb(80, 90, 100);
-}
-
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
 html,
 body {
-    background-color: hsl(349, 40%, 33%);;
+    background-color: hsl(349, 40%, 33%);
+    ;
     width: 100%;
     min-width: 100vw;
     min-height: 100vh;
     z-index: 0;
     box-sizing: border-box;
-    
+
     /*No scrolling! There are monsters down there...*/
     overflow: hidden;
 }
 
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: WhiteSmoke;
+}
+
+.wrapper {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-flex-direction: row;
+    -moz-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+    background-color: lightblue;
+}
+
+canvas {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: #333;
+}
+
 @media only screen and (min-width: 800px) {
-    
+    .wrapper {
+        width: 98.5%;
+    }
+    .wrapper > canvas {
+        width: 80%;
+    }
 }
